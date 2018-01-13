@@ -7,7 +7,7 @@ figure; hold on;
 
 gscatter(X(:,1), X(:,2), y, 'br', 'xo');
 
-%% OR
+%% Recommended by course instructor
 % % Find Indices of Positive and Negative Examples
 % pos = find(y==1); neg = find(y == 0);
 % % Plot Examples
