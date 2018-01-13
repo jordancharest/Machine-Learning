@@ -5,7 +5,7 @@ function plotData(X, y)
 
 figure; hold on;
 
-gscatter(X(:,1), X(:,2), y, 'br', 'xo');
+gscatter(X(:,1), X(:,2), y, 'br', 'ox');
 
 %% Recommended by course instructor
 % % Find Indices of Positive and Negative Examples
