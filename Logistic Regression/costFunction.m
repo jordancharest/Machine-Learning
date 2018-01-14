@@ -21,7 +21,7 @@ gradient = zeros(size(theta));
 hypothesis = X .* repmat(theta', [m 1]);
 hypothesis =  sum(hypothesis, 2);
 hypothesis = sigmoid(hypothesis);
-cost = (1/m) * (-y'*log10(hypothesis) - (1-y)' * log10(1-hypothesis));
+cost = (1/m) * (-y'*log(hypothesis) - (1-y)' * log(1-hypothesis));
 
 
 
