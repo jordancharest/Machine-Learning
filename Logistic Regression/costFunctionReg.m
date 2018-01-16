@@ -17,8 +17,8 @@ hypothesis = sigmoid(hypothesis);
 % Calculate cost
 cost = (1/m) * (-y'*log(hypothesis) - (1-y)' * log(1-hypothesis));
 
-% Add regularization term (Don't regularize theta_0, theta(1))
-cost = cost + lambda * (sum(theta) - theta(1));
+% Add regularization term (Don't regularize theta_0 a.k.a. theta(1))
+cost = cost + lambda/(2*m) * (sum(theta(2:end).^2));
 
 
 %% Gradient updates for fminunc() (find min of unconstrained function)
