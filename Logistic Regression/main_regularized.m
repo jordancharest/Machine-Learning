@@ -95,7 +95,7 @@ pause;
 %% ============= Part 2: Regularization and Accuracies =============
 %  Optional Exercise:
 %  In this part, you will get to try different values of lambda and
-%  see how regularization affects the decision coundart
+%  see how regularization affects the decision boundary
 %
 %  Try the following values of lambda (0, 1, 10, 100).
 %
