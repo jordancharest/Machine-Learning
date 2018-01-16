@@ -42,7 +42,7 @@ xlabel('Exam 1 score')
 ylabel('Exam 2 score')
 
 % Specified in plot order
-legend('Admitted', 'Not admitted')
+legend('Not admitted', 'Admitted')
 hold off;
 
 fprintf('\nProgram paused. Press enter to continue.\n');
@@ -116,7 +116,7 @@ xlabel('Exam 1 score')
 ylabel('Exam 2 score')
 
 % Specified in plot order
-legend('Admitted', 'Not admitted')
+legend(' Not Admitted', 'Admitted')
 hold off;
 
 fprintf('\nProgram paused. Press enter to continue.\n');
