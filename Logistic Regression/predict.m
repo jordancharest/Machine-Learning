@@ -6,9 +6,6 @@ function p = predict(theta, X)
 
 m = size(X, 1); % Number of training examples
 
-% Vector of predictions
-p = zeros(m, 1);
-
 % Calculate the hypothesis for all training examples
 hypothesis = X .* repmat(theta', [m 1]);
 hypothesis =  sum(hypothesis, 2);
@@ -19,21 +16,6 @@ hypothesis = sigmoid(hypothesis);
 
 % Make predictions for each probability
 % >= 0.5 results in positive prediction
-for i = 1:m
-    if hypothesis(i) >= 0.5
-        p(i) = 1;
-    else
-        p(i) = 0;
-    end
-end
-
-
-
-
-
-
-
-% =========================================================================
-
+p = hypothesis >= 0.5;
 
 end
