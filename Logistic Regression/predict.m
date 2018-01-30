@@ -4,15 +4,8 @@ function p = predict(theta, X)
 %   p = PREDICT(theta, X) computes the predictions for X using a 
 %   threshold at 0.5 (i.e., if sigmoid(theta'*x) >= 0.5, predict 1)
 
-m = size(X, 1); % Number of training examples
-
-% Calculate the hypothesis for all training examples
-hypothesis = X .* repmat(theta', [m 1]);
-hypothesis =  sum(hypothesis, 2);
-
 % Generate the logistic distribution
-hypothesis = sigmoid(hypothesis);
-
+hypothesis = sigmoid(X * theta);
 
 % Make predictions for each probability
 % >= 0.5 results in positive prediction
